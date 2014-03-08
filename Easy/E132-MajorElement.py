@@ -1,13 +1,14 @@
 #!/usr/bin/python
 
 import sys
+from collections import Counter
 
 with open(sys.argv[1]) as f:
     for line in f:
-        numbers = [int(i) for i in line.split(',')]
-        counts = {i: len([j for j in numbers if j == i]) for i in numbers}
-        output = [i for i in counts if counts[i] > len(numbers) / 2]
-        if len(output) == 0:
-            print None
+        e = line.split(',')
+        c = Counter(e)
+        value, count = c.most_common()[0]
+        if count >= len(e) / 2:
+            print value
         else:
-            print output[0]
+            print None
