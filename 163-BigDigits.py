@@ -16,6 +16,10 @@ graph_dict = {
 }
 
 
+# f = ('31415926', '141421356')
 with open(sys.argv[1]) as f:
     for line in f:
-        pass
+        nums = filter(str.isdigit, line)
+        num_graphs = zip(*[graph_dict[n] for n in nums])
+        for row in [''.join(num_row) for num_row in num_graphs]:
+            print(row)
