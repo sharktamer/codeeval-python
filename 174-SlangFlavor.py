@@ -1,7 +1,8 @@
 #!/bin/env python
 
 import sys
-from itertools import cycle
+from itertools import cycle, zip_longest
+import re
 
 phrases = [
     ', yeah!',
@@ -18,4 +19,10 @@ phrase_cycle = cycle(phrases)
 with open(sys.argv[1]) as f:
     text = f.read().strip()
 
-
+sentences = re.findall(r'.*?[\.!?]\n?', text)
+out = ''.join(
+    i + re.sub(r'[\.!?]', next(phrase_cycle), j)
+    for i, j
+    in zip_longest(sentences[::2], sentences[1::2], fillvalue='')
+)
+print(out)
