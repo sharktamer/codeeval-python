@@ -29,7 +29,7 @@ for line in lines:
             out += [d2]
     # Sum the size of each range, taking the last day of the month for each end
     result = sum(
-        ((d2 - d1).days + monthrange(d2.year, d2.month)[1]) / 365 for d1, d2
-        in out)
+        ((d2 - d1).days + monthrange(d2.year, d2.month)[1]) / 365
+        for d1, d2 in out)
     # Print the result :D
     print(int(result))
