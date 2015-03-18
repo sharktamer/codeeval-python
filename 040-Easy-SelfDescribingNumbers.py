@@ -11,4 +11,4 @@ def selfDescribing(number):
 
 with open(sys.argv[1]) as f:
     for line in f:
-        print selfDescribing(line.strip())
+        print(selfDescribing(line.strip()))

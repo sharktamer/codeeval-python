@@ -10,5 +10,4 @@ for l in fs:
     out_list = []
     for i in range(1, n + 1):
         out_list.append(((i, "B"), ("F", "FB"))[i % f == 0][i % b == 0])
-    print " ".join(str(i) for i in out_list)
-
+    print(" ".join(str(i) for i in out_list))

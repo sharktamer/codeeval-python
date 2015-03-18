@@ -7,4 +7,4 @@ with open(sys.argv[1]) as f:
         ints = [int(i) for i in line.split(',')]
         s = sorted(set(ints))
         out = ','.join([str(i) for i in s])
-        print out
+        print(out)

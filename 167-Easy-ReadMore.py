@@ -9,7 +9,6 @@ with open(sys.argv[1]) as f:
             line = line[:40]
             if ' ' in line:
                 line = ' '.join(line[:40].split(' ')[:-1])
-            print '{0}... <Read More>'.format(line)
+            print('{0}... <Read More>'.format(line))
         else:
-            print line
-
+            print(line)

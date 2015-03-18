@@ -18,11 +18,11 @@ def setCol(j, x):
 
 
 def queryRow(i):
-    print sum([int(x) for x in board[int(i)]])
+    print(sum([int(x) for x in board[int(i)]]))
 
 
 def queryCol(j):
-    print sum([int(x) for x in zip(*board)[int(j)]])
+    print(sum([int(x) for x in zip(*board)[int(j)]]))
 
 funDict = {'SetRow': setRow, 'SetCol': setCol,
            'QueryRow': queryRow, 'QueryCol': queryCol}

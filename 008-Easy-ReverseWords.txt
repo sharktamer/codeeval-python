@@ -6,4 +6,4 @@ with open(in_file) as f:
     file = f.readlines()
 
 for l in file:
-    print " ".join(l.split()[::-1])
+    print(" ".join(l.split()[::-1]))

@@ -10,5 +10,5 @@ def isPrime(n):
 for i in range(1000)[::-1]:
     if isPrime(i):
         if str(i) == str(i)[::-1]:
-            print i
+            print(i)
             break

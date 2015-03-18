@@ -16,4 +16,4 @@ with open(sys.argv[1]) as f:
         n, e = line.split()
         ec = e.replace('+', '').replace('-', '')
         t = maketrans(ec, n)
-        print eval(e.translate(t))
+        print(eval(e.translate(t)))

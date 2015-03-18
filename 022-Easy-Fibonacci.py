@@ -9,4 +9,4 @@ for l in fl:
     fib = [0, 1]
     for i in range(int(l)-1):
         fib.append(fib[-1] + fib[-2])
-    print fib[int(l)]
+    print(fib[int(l)])

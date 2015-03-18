@@ -9,6 +9,6 @@ with open(sys.argv[1]) as f:
         c = Counter(e)
         value, count = c.most_common()[0]
         if count >= len(e) / 2:
-            print value
+            print(value)
         else:
-            print None
+            print(None)

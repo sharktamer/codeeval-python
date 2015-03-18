@@ -30,4 +30,4 @@ while len(first1000Primes) < 1001:
         first1000Primes.append(i)
     i += 1
 
-print sum(first1000Primes) - 1
+print(sum(first1000Primes) - 1)

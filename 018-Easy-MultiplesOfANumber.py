@@ -12,4 +12,4 @@ for l in fl:
     while out < x:
         out = n * i
         i += 1
-    print out
+    print(out)

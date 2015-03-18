@@ -11,6 +11,6 @@ with open(sys.argv[1]) as f:
         trans = line.strip().translate(m)
         out = "".join(re.findall(r'\d', trans))
         if len(out) == 0:
-            print 'NONE'
+            print('NONE')
         else:
-            print out
+            print(out)
