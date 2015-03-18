@@ -2,9 +2,8 @@
 
 import sys
 import re
-import string
 
-m = string.maketrans('abcdefghij', '0123456789')
+m = str.maketrans('abcdefghij', '0123456789')
 
 with open(sys.argv[1]) as f:
     for line in f:
