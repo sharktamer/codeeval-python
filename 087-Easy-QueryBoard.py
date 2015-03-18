@@ -12,9 +12,9 @@ def setRow(i, x):
 
 def setCol(j, x):
     global board
-    tempBoard = zip(*board)
+    tempBoard = list(zip(*board))
     tempBoard[int(j)] = [x] * 256
-    board = zip(*tempBoard)
+    board = list(zip(*tempBoard))
 
 
 def queryRow(i):
@@ -22,7 +22,7 @@ def queryRow(i):
 
 
 def queryCol(j):
-    print(sum([int(x) for x in zip(*board)[int(j)]]))
+    print(sum([int(x) for x in list(zip(*board))[int(j)]]))
 
 funDict = {'SetRow': setRow, 'SetCol': setCol,
            'QueryRow': queryRow, 'QueryCol': queryCol}
