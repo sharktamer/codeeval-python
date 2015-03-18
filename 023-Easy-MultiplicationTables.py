@@ -1,6 +1,6 @@
 #!/bin/env python
 
-for i in xrange(1, 13):
-    for j in xrange(1, 13):
-        print(str(i * j).rjust(4)),
-    print
+for i in range(1, 13):
+    for j in range(1, 13):
+        print('{0:4}'.format(i*j), end="")
+    print()
