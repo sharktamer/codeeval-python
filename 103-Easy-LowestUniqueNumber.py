@@ -1,7 +1,7 @@
-#!/bin/env python
+#!/usr/bin/env python
 
 import sys
-#!/bin/env python
+#!/usr/bin/env python
 
 import sys
 from itertools import groupby
