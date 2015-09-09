@@ -15,5 +15,5 @@ with open(sys.argv[1]) as f:
 for line in lines:
     f = fib()
     fibind = [next(f) for _ in range(len(line))][-1]
-    out = fibind - len([i for i in line[:-1] if i not in ('1', '2')])
+    out = fibind - len([i for i in line[:-1] if i not in ('0', '1', '2')])
     print(out)
